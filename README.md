@@ -6,15 +6,11 @@ API client for the GovWizely/ITA industry_mapping service.
 
 Add this line to your application's Gemfile:
 
-    gem 'industry_mapping_client'
+    gem 'industry_mapping_client', git: 'git@github.com:GovWizely/industry_mapping_client.git'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install industry_mapping_client
 
 ## Usage
 
