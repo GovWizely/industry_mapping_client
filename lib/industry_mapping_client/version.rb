@@ -1,3 +1,3 @@
-module IndustryMappingClient
+class IndustryMappingClient
   VERSION = "0.0.1"
 end
