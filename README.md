@@ -1,6 +1,6 @@
 # IndustryMappingClient
 
-TODO: Write a gem description
+API client for the GovWizely/ITA industry_mapping service.
 
 ## Installation
 

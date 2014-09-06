@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = IndustryMappingClient::VERSION
   spec.authors       = ["Calum Halcrow"]
   spec.email         = ["calumhalcrow@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{industry_mapping API client.}
+  spec.description   = %q{API client for the GovWizely/ITA industry_mapping service.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
