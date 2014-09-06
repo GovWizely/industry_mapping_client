@@ -18,7 +18,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    IndustryMappingClient.map_industry('Construction Eq.')
+    # returns "Construction, Building & Heavy Equipment"
 
 ## Contributing
 
