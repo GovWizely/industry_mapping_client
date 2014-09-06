@@ -21,5 +21,6 @@ class IndustryMappingClient
     end
   end
 
+  # TODO change to actual API host once API is live.
   self.host = 'localhost:3000'
 end
