@@ -16,7 +16,8 @@ describe IndustryMappingClient do
 
   describe '.url' do
     it 'escapes all in the search term' do
-      expect(described_class.url('Construction & Equipment') ).to eq 'http://localhost:3000/industry_sector.json?emenu=Construction+%26+Equipment'
+      expect(described_class.url('Construction & Equipment'))
+        .to eq "http://#{described_class.host}/industry_sector.json?emenu=Construction+%26+Equipment"
     end
   end
 
