@@ -17,7 +17,7 @@ class IndustryMappingClient
     end
 
     def url(search_term)
-      "http://#{host}/industry_sector.json?emenu=#{URI.escape(search_term)}"
+      "http://#{host}/industry_sector.json?emenu=#{CGI.escape(search_term)}"
     end
   end
 
