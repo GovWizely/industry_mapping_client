@@ -1,8 +1,11 @@
 require 'spec_helper'
 
 describe IndustryMappingClient do
+
+  let(:source) { 'MarketResearch' }
+
   describe '.map_industry' do
-    subject { described_class.map_industry(term) }
+    subject { described_class.map_industry(term, source) }
     context 'searching for "Construction Eq."' do
       let(:term) { 'Construction Eq.' }
       it { should eq 'Construction, Building & Heavy Equipment' }
@@ -14,18 +17,4 @@ describe IndustryMappingClient do
     end
   end
 
-  describe '.url' do
-    it 'escapes all in the search term' do
-      expect(described_class.url('Construction & Equipment'))
-        .to eq "http://#{described_class.host}/industry_sector.json?emenu=Construction+%26+Equipment"
-    end
-  end
-
-  describe '.host' do
-    let(:host) { 'example.com' }
-    it 'can be changed' do
-      described_class.host = host
-      expect(described_class.host).to eq host
-    end
-  end
 end
