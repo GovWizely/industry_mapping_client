@@ -17,6 +17,13 @@ And then execute:
     IndustryMappingClient.map_industry('Construction Eq.')
     # returns "Construction, Building & Heavy Equipment"
 
+## Configuration
+
+You can configure how the gem behaves like so:
+
+    IndustryMappingClient.configure(log_failed: false,
+                                    base_url:   'http://localhost:3001/api/industries.json')
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/industry_mapping_client/fork )
