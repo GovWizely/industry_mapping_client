@@ -6,9 +6,9 @@ describe IndustryMappingClient do
 
   describe '.map_industry' do
     subject { described_class.map_industry(term, source) }
-    context 'searching for "Construction Eq."' do
-      let(:term) { 'Construction Eq.' }
-      it { should eq 'Construction, Building & Heavy Equipment' }
+    context 'searching for "Agribusiness"' do
+      let(:term) { 'Agribusiness' }
+      it { should match_array ['Agribusiness', 'Chemicals'] }
     end
 
     context 'searching for non-existent eMenu' do

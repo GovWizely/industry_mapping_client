@@ -14,8 +14,8 @@ And then execute:
 
 ## Usage
 
-    IndustryMappingClient.map_industry('Construction Eq.')
-    # returns "Construction, Building & Heavy Equipment"
+    IndustryMappingClient.map_industry('Agribusiness', 'MarketResearch')
+    # returns ["Agribusiness", "Chemicals"]
 
 ## Configuration
 
