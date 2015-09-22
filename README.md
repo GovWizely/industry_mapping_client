@@ -2,6 +2,10 @@
 
 API client for the GovWizely/ITA industry_mapping service.
 
+## Code Status
+
+* [![Build Status](https://travis-ci.org/GovWizely/industry_mapping_client.svg?branch=master)](https://travis-ci.org/GovWizely/industry_mapping_client/)
+
 ## Installation
 
 Add this line to your application's Gemfile:
