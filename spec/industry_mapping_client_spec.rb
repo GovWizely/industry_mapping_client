@@ -11,7 +11,7 @@ describe IndustryMappingClient do
       it { should match_array ['Agribusiness', 'Chemicals'] }
     end
 
-    context 'searching for non-existent eMenu' do
+    context 'searching for non-existent term' do
       let(:term) { 'This will probably never ever ever be an industry.' }
       it { should be_nil }
     end
@@ -22,10 +22,10 @@ describe IndustryMappingClient do
       subject { described_class.instance_variable_get('@config')[:log_failed] }
       let(:base_url) { 'example.com' }
 
-      let(:topic) { 'fake_topic' }
+      let(:mapped_term) { 'fake_mapped_term' }
       let(:source) { 'fake_source' }
       let(:query) do
-        { query: { topic: topic,
+        { query: { mapped_term: mapped_term,
                    source: source,
                    log_failed: log_failed } }
       end

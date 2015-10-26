@@ -1,7 +1,7 @@
 class IndustryMappingClient
   @config = {
     log_failed: false,
-    base_url:   'http://im.govwizely.com/api/industries.json'
+    base_url:   'http://im.govwizely.com/api/terms.json'
   }
 
   @valid_config_keys = @config.keys
