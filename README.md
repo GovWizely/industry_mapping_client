@@ -26,7 +26,7 @@ And then execute:
 You can configure how the gem behaves like so:
 
     IndustryMappingClient.configure(log_failed: false,
-                                    base_url:   'http://localhost:3001/api/industries.json')
+                                    base_url:   'http://localhost:3001/api/terms.json')
 
 ## Contributing
 
